@@ -29,6 +29,7 @@ import {
 import { ServiceFlowDemo } from '../components/demos/ServiceFlowDemo';
 import { KnowledgeDeskDemo } from '../components/demos/KnowledgeDeskDemo';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import heroFuturisticLabImage from '../assets/images/satora_hero_futuristic_lab_1791393431492.jpg';
 
 interface OverviewViewProps {
   setCurrentTab: (tab: string) => void;
@@ -340,7 +341,7 @@ export const OverviewView: React.FC<OverviewViewProps> = ({
                 {/* Fallback container with styled image */}
                 <div className="relative aspect-[16/9] w-full bg-[#080C16] overflow-hidden">
                   <img
-                    src="/src/assets/images/satora_hero_futuristic_lab_1791393431492.jpg"
+                    src={heroFuturisticLabImage}
                     alt="Satora.dev Digital Engineering Center"
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
